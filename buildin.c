@@ -18,7 +18,7 @@ void exitt(char **arv)
 		freearv(arv);
 		exit(n);
 	}
-	
+
 	i = 0;
 	while (arv[i])
 	{
@@ -69,7 +69,7 @@ int _atoi(char *str)
 void envn(char **arv __attribute__((unused)))
 {
 	int i;
-	
+
 	i = 0;
 	while (environ[i])
 	{

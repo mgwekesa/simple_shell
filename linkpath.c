@@ -14,7 +14,7 @@ char *getenvn(const char *name)
 
 	if (!name)
 		return ('\0');
-	
+
 	i = 0;
 	while (environ[i])
 	{
@@ -83,7 +83,7 @@ list_path *linkpath(char *path)
 	char *cpath = _strdup(path);
 
 	tkn = strtok(cpath, ":");
-	
+
 	while (tkn)
 	{
 		head = add_node_end(&head, tkn);

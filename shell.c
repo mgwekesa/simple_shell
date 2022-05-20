@@ -21,7 +21,7 @@ void sg_handler(int sg_n)
 void _EOF(int len, char *buff)
 {
 	(void)buff;
-	
+
 	if (len == -1)
 	{
 		if (isatty(STDIN_FILENO))
